@@ -1,0 +1,13 @@
+.SpritesFeed {
+  width: 100%;
+  position: relative;
+
+  &-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+}

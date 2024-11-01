@@ -1,0 +1,54 @@
+.SpritesFeedPost {
+  position: relative;
+  background-color: white;
+  border: 1px solid #efefef;
+  width: 100%;
+  margin: .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  border-radius: 2px;
+  display: inline-block;
+  -webkit-transition: box-shadow .25s ease-in;
+
+  &-post {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    font-size: .85rem;
+  }
+  &-thumb {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #efefef;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px #cecece;
+  }
+}
+
+.SpritesFeedPost--Flex {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .SpritesFeedPost {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .SpritesFeedPost {
+    width: calc(100% / 3 - 1rem);
+  }
+}
